@@ -1,11 +1,18 @@
 import java.util.Stack;
 
+import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 public class CentStacker {
     public final int quarter = 25;
     public final int dime = 10;
     public final int nickel = 5;
     public final int penny = 1;
     public int totalBalance;
+    public int totalpennyBalance;
+    public int totalnickelBalance;
     public int totalpoppedBalance;
     Stack<Integer> pennies = new Stack<>();
     Stack<Integer> nickels = new Stack<>();
@@ -31,7 +38,7 @@ public class CentStacker {
         }
     }
 
-    public void addNickels(int count) {
+    public void addNickel(int count) {
         for (int i = 0; i < count; i++) {
             nickels.push(nickel);
             totalBalance += nickel;
@@ -47,6 +54,14 @@ public class CentStacker {
             return 0;
         }
     }
+    public void totalbalance(Stack<Integer> stack) {
+        for (int i = 0; i < stack.size(); i++) {
+            
+        }
+    }
+    public static void main(String[] args)  {
+   
+  }
 }
 
 
